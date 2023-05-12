@@ -1,0 +1,121 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{sqrcaps}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage[parfill]{parskip}
+\usepackage{ifthen}
+\pagestyle{empty}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\geometry{
+    letterpaper,
+    left=.5in,
+    top=.5in,
+    bottom=.5in,
+    right=.5in
+}
+    
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+}
+
+\titleformat{\section}{\huge\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries\Large}{}{0em}{}
+\titleformat{\subsubsection}[runin]{\bfseries}{}{0em}{}
+
+\author{Leonardo M. Moreira}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        {\huge\bfseries\theauthor} \\
+        \href{mailto:leo.monteiro06@protonmail.com}{leo.monteiro06@protonmail.com} |
+        \href{https://github.com/1ukidev}{github.com/1ukidev}
+        | \href{https://www.linkedin.com/in/leomonteiromoreira}{linkedin.com/in/leonardomm}
+    \end{center}
+}
+
+\newenvironment{rSubsection}[4]{
+ {\bf #1} \hfill {#2}
+ \ifthenelse{\equal{#3}{}}{}{
+  \\
+  {\em #3} \hfill {\em #4}
+  }
+  \begin{list}{$\cdot$}{\leftmargin=0em}
+   \itemsep -0.5em \vspace{-0.5em}
+  }{
+  \end{list}
+  \vspace{0.5em}
+}
+
+\newcommand{\uiuc}{EEEP Paulo Petrola}
+\newcommand{\loc}{Fortaleza, CE}
+
+\begin{document}
+
+\maketitle
+
+\section{Educação}
+    \begin{rSubsection}
+        {\uiuc}{Janeiro 2021 - Dezembro 2023}{Curso de informática}{\loc}
+        \item[]
+    \end{rSubsection}
+\vspace{-2em}
+
+\section{Objetivo}
+    Sou um estudante de informática altamente motivado em busca de uma posição de estágio em uma empresa de tecnologia, onde possa aplicar minhas habilidades de programação e conhecimento em sistemas operacionais para contribuir para o desenvolvimento de soluções inovadoras e eficazes.
+
+\section{Habilidades}
+    \subsubsection
+    {Experiência em administração de sistemas Linux e BSD, incluindo instalação, configuração e solução de problemas em servidores de produção.}
+    \hfill
+    \vspace{-1em}
+    
+    \subsubsection
+    {Virtualização:}
+    VMware, VirtualBox, KVM, Proxmox
+    \vspace{-1.5em}
+
+    \subsubsection
+    {Contêineres:}
+    Docker, Podman, systemd-nspawn
+    \vspace{-1.5em}
+
+    \subsubsection
+    {Linguagens de programação:}
+    Java, Shell script, Nix, SQL
+    \vspace{-1.5em}
+
+    \subsubsection
+    {Desenvolvimento:}
+    Visual Studio Code, Neovim, Emacs, Git
+    \vspace{-1.5em}
+
+    \subsubsection
+    {Outros:}
+    Clonezilla, ZFS, Brfs, OpenSSH
+    \vspace{-1.5em}
+
+    \subsubsection
+    {Idiomas estrangeiros:}
+    Inglês (intermediário)
+\vspace{-0.5em}
+
+\section{Cursos}
+    \begin{rSubsection}
+        {LEAD Dell - Suporte Técnico em Tecnologia da Informação}{}{Completo}{}
+        \item \href{https://drive.google.com/file/d/1IEUxRvTVJ9mU2YC1xdYCqrIL5X8-OfbE/view?usp=sharing}{Certificação do curso}
+    \end{rSubsection}
+    
+    \begin{rSubsection}
+        {AWS Academy Graduate - AWS Academy Cloud Foundations}{}{Completo}{}
+        \item \href{https://www.credly.com/badges/fef1305d-f09a-41ab-b8c7-39d318e3e19e/public_url}{Certificação do curso}
+    \end{rSubsection}
+
+\end{document}
