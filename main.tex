@@ -18,7 +18,7 @@
     bottom=.5in,
     right=.5in
 }
-    
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -55,34 +55,48 @@
   \vspace{0.5em}
 }
 
-\newcommand{\uiuc}{EEEP Paulo Petrola}
-\newcommand{\loc}{Fortaleza, CE}
+\newenvironment{rSubsection2}[4]{
+ {\bf #1} \hfill {#2}
+ \\
+ {\em #3} \hfill {\em #4} {\parfillskip0pt\par}
+ \vspace{0.5em}
+}
 
 \begin{document}
 
 \maketitle
 
 \section{Educação}
-    \begin{rSubsection}
-        {\uiuc}{Janeiro 2021 - Dezembro 2023}{Curso de informática}{\loc}
-        \item[]
-    \end{rSubsection}
-\vspace{-2em}
+    \begin{rSubsection2}
+        {EEEP Paulo Petrola}{2021 - 2023}{Curso de informática}{Fortaleza, CE}
+    \end{rSubsection2}
+    \begin{rSubsection2}
+        {Estácio}{2024 - Atualmente}{Ciência da computação}{Fortaleza, CE}
+    \end{rSubsection2}
+\vspace{-1em}
 
-\section{Objetivo}
-    Sou um estudante altamente motivado em busca de uma posição de estágio em uma empresa de tecnologia, onde posso aplicar minhas habilidades de programação e conhecimento em sistemas operacionais, contribuindo para o desenvolvimento de soluções inovadoras e eficazes.
+\section{Experiência}
+    \begin{rSubsection2}
+        {SMT Systems}{2023 - Atualmente}{Programador}{Fortaleza, CE}
+    \end{rSubsection2}
+\vspace{-1em}
 
 \section{Habilidades}
     \subsubsection
-    {Sou comunicativo, colaborativo e flexível, capaz de resolver problemas de forma criativa e trabalhar em equipe para alcançar resultados positivos.}
+    {Experiência em programação, desenvolvimento de sistemas e administração de servidores Linux e BSD.}
     \hfill
     \vspace{-1em}
 
     \subsubsection
-    {Experiência em administração de sistemas Linux e BSD, incluindo instalação, configuração e solução de problemas em servidores de produção.}
-    \hfill
-    \vspace{-1em}
-    
+    {Linguagens de programação:}
+    Java, JavaScript, ActionScript, Shell Script, SQL 
+    \vspace{-1.5em}
+
+    \subsubsection
+    {Ferramentas de desenvolvimento:}
+    Git, Visual Studio, Vim, Emacs
+    \vspace{-1.5em}
+
     \subsubsection
     {Virtualização:}
     VMware, Proxmox, KVM
@@ -94,23 +108,13 @@
     \vspace{-1.5em}
 
     \subsubsection
-    {Linguagens de programação:}
-    Shell script, Nix, SQL, Java
-    \vspace{-1.5em}
-
-    \subsubsection
-    {Ferramentas de desenvolvimento:}
-    Vim, Emacs, Git
-    \vspace{-1.5em}
-
-    \subsubsection
     {Outros:}
-    Clonezilla, ZFS, Brfs, OpenSSH
+    Clonezilla, ZFS, Btrfs, OpenSSH
     \vspace{-1.5em}
 
     \subsubsection
     {Idiomas estrangeiros:}
-    Inglês (técnico)
+    Inglês
 \vspace{-0.5em}
 
 \section{Cursos}
@@ -118,7 +122,7 @@
         {LEAD Dell | Suporte Técnico em Tecnologia da Informação}{}{Completo}{}
         \item[] \href{https://drive.google.com/file/d/1IEUxRvTVJ9mU2YC1xdYCqrIL5X8-OfbE/view?usp=sharing}{Certificado}
     \end{rSubsection}
-    
+
     \begin{rSubsection}
         {AWS Academy Graduate | AWS Academy Cloud Foundations}{}{Completo}{}
         \item[] \href{https://www.credly.com/badges/fef1305d-f09a-41ab-b8c7-39d318e3e19e/public_url}{Certificado}
